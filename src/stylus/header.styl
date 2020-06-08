@@ -1,9 +1,19 @@
 @import './menu.styl'
 .header
-    border: 1px solid green
     background: white
-    position relative
+    position sticky  // parecido a fixed con la diferencia que el contenido que esta fuera de el va debajo y no aculto
+    top: 0
+    
+    left 0
+    right 0
+    padding-top: 2.2em
+    padding-bottom: 1.2em 
     &-content
         display: flex
         justify-content: space-between
         align-items: center
+    &-logo
+        display: block
+        height 25px
+        width 100%
+        background: url("../images/logo-bookmark.svg") no-repeat
