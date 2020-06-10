@@ -67,6 +67,7 @@
   right: 0;
   padding-top: 2.2em;
   padding-bottom: 1.2em;
+  z-index: 2;
 }
 .header-content {
   display: flex;
@@ -91,6 +92,69 @@
 .hero-buttons {
   padding-top: 1em;
 }
+.tabs {
+  margin-top: 2.3em;
+  border-top: 1px solid var(--grayish_Blue);
+}
+.tabs-link {
+  color: var(--very_Dark_Blue);
+  border-bottom: 1px solid var(--grayish_Blue);
+}
+.tabs-content {
+  display: none;
+}
+.tabs-content .u-h1 {
+  font-size: 1.3em;
+}
+.tabs-content img {
+  max-width: 100%;
+}
+.tabs-content .u-button {
+  display: none;
+}
+.tabs label {
+  padding: 1em 0;
+  display: block;
+  position: relative;
+}
+.tabs label::after {
+  display: none;
+  content: "";
+  height: 5px;
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  transform: translateX(50%);
+  box-shadow: inset 0 -15px 0 -10px #f00;
+}
+.tabs input {
+  display: none;
+}
+.tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]::after {
+  display: block;
+}
+.tabs input[id="bookmarking"]:checked ~ .tabs-grid #tab-bookmarking {
+  display: block;
+}
+.tabs input[id="searching"]:checked ~ ul [for="searching"]::after {
+  display: block;
+}
+.tabs input[id="searching"]:checked ~ .tabs-grid #tab-searching {
+  display: block;
+}
+.tabs input[id="sharing"]:checked ~ ul [for="sharing"]::after {
+  display: block;
+}
+.tabs input[id="sharing"]:checked ~ .tabs-grid #tab-sharing {
+  display: block;
+}
+.feactures {
+  text-align: center;
+}
+.feactures ul {
+  padding-bottom: 2.7em;
+}
 :root {
   --soft_Blue: #5368df;
   --soft_Red: #fa5757;
@@ -100,18 +164,34 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  margin: 0;
+}
+body ul {
   padding: 0;
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+margin: 0 {
+  padding: 0;
+}
+.is-hidden {
+  display: none;
 }
 .u-wrapper {
   max-width: 1280px;
   margin: auto;
   padding: 0 1.6em;
 }
-.u-h1 {
+.u-h1,
+.u-h2 {
   font-size: 1.65em;
   font-weight: 500;
   color: var(--very_Dark_Blue);
+}
+.u-h2 {
+  font-size: 1.4em;
 }
 .u-p {
   color: var(--grayish_Blue);
