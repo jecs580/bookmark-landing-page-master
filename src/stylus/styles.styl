@@ -1,6 +1,7 @@
 @import './header.styl'
 @import './hero.styl'
 @import './feactures.styl'
+@import './download.styl'
 :root
     // Primary
 
@@ -14,6 +15,7 @@
 body
  font-family: 'Rubik', sans-serif;
  font-size: 18px;
+ margin: 0
  ul
     padding: 0
     list-style none
@@ -35,7 +37,11 @@ a
 
 .u-h2
     @extends .u-h1
-    font-size: 1.4em
+    font-size: 1.3em
+.u-h3
+    @extends .u-h1
+    font-size: 1.2em
+    
 .u-p
     color: var(--grayish_Blue)
     font-size: 0.83em
@@ -57,4 +63,6 @@ a
     &.is-gray
         background: #f7f7f7
         color: var(--very_Dark_Blue)
+    &.is-full-width
+        width: 100%
 
