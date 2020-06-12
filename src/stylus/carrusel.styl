@@ -1,0 +1,24 @@
+.carrusel
+    padding-bottom: 2.5em
+    &-header
+        padding 1em 0
+        position relative
+        // border-bottom: 1px solid var(--lightGray)
+        font-size: .83em
+        &:focus
+            outline: 0
+        &::-webkit-details-marker
+            display: none
+            // background: red
+        &::before
+            position: absolute
+            right: 0
+            content: url("../images/icon-arrow.svg");
+    &-content
+        border-bottom: 1px solid var(--lightGray)
+        font-size: 1em
+        &[open] > summary::before
+            position: absolute
+            right: 0
+            transform: rotate(180deg)
+            content: url("../images/icon-arrow-close.svg");
