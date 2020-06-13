@@ -182,6 +182,7 @@
 }
 .carrusel {
   padding-bottom: 2.5em;
+  text-align: left;
 }
 .carrusel-header {
   padding: 1em 0;
@@ -203,24 +204,18 @@
   border-bottom: 1px solid var(--lightGray);
   font-size: 1em;
 }
+.carrusel-content .u-p {
+  padding: 0 0.5em;
+}
 .carrusel-content[open] > summary::before {
-  position: absolute;
-  right: 0;
   transform: rotate(180deg);
   content: url("../images/icon-arrow-close.svg");
 }
 .questions {
-  padding-bottom: 4em;
-}
-.questions .u-wrapper > .u-p,
-.questions .u-wrapper .u-h2 {
+  padding-bottom: 6em;
   text-align: center;
 }
-.questions .button-content {
-  display: block;
-  text-align: center;
-}
-.questions .button-content .u-button {
+.questions .u-button {
   padding: 1em 1.5em;
 }
 :root {

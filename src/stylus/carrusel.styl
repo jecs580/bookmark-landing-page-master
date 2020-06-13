@@ -1,5 +1,6 @@
 .carrusel
     padding-bottom: 2.5em
+    text-align: left 
     &-header
         padding 1em 0
         position relative
@@ -17,8 +18,8 @@
     &-content
         border-bottom: 1px solid var(--lightGray)
         font-size: 1em
+        .u-p
+            padding: 0 .5em
         &[open] > summary::before
-            position: absolute
-            right: 0
             transform: rotate(180deg)
             content: url("../images/icon-arrow-close.svg");
