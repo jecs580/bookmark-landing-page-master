@@ -224,6 +224,18 @@
   padding: 3em 0;
   text-align: center;
 }
+.join small {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.65em;
+}
+.join .u-h3 {
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 0.5em;
+  margin-bottom: 1.4em;
+  letter-spacing: 0.5px;
+}
 .form .u-button {
   margin: 0;
 }
@@ -233,7 +245,7 @@
 .form-input {
   margin-bottom: 1.5em;
   width: 100%;
-  padding: 1.3em;
+  padding: 1.05em;
   border-radius: 6px;
   box-sizing: border-box;
   border: none;
@@ -274,7 +286,8 @@ a {
 }
 .u-h1,
 .u-h2,
-.u-h3 {
+.u-h3,
+.u-h4 {
   font-size: 1.65em;
   font-weight: 500;
   color: var(--very_Dark_Blue);
@@ -284,6 +297,9 @@ a {
 }
 .u-h3 {
   font-size: 1.2em;
+}
+.u-h4 {
+  font-size: 1em;
 }
 .u-p {
   color: var(--grayish_Blue);
