@@ -42,6 +42,26 @@
   cursor: pointer;
   user-select: none;
 }
+.menu-social {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 120px;
+  text-align: center;
+}
+.menu-social a {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.menu-social .facebook {
+  background: url("../images/icon-facebook.svg") no-repeat center;
+  margin-right: 2em;
+}
+.menu-social .twitter {
+  background: url("../images/icon-twitter.svg") no-repeat center;
+}
 .menu-checkbox {
   display: none;
 }
