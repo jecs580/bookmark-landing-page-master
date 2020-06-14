@@ -255,6 +255,45 @@
 .form-input::-webkit-input-placeholder {
   color: rgba(145,148,161,0.5);
 }
+.footer {
+  text-align: center;
+  background: var(--very_Dark_Blue);
+  padding: 2.2em 0;
+}
+.footer ul {
+  list-style: none;
+}
+.footer a {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--lightGray);
+  text-decoration: none;
+  font-size: 0.85em;
+  letter-spacing: 1.5px;
+}
+.footer-menu {
+  padding-top: 1.2em;
+}
+.footer-menu a {
+  display: block;
+  padding: 1em 0;
+}
+.footer-social {
+  margin-top: 1em;
+}
+.footer-social a {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.footer-social .facebook {
+  background: url("../images/icon-facebook.svg") no-repeat center;
+  margin-right: 2em;
+}
+.footer-social .twitter {
+  background: url("../images/icon-twitter.svg") no-repeat center;
+}
 :root {
   --soft_Blue: #5368df;
   --soft_Red: #fa5757;
