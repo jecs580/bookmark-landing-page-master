@@ -76,4 +76,34 @@
                 opacity 1
               .menu-open
                 background: url("../images/icon-close.svg") no-repeat center
+    @media screen and (min-width:1024px)
+      transform: translateY(0)
+      visibility: visible
+      opacity 1
+      position: initial
+      height: auto
+      background: initial
+      a
+        color: var(--very_Dark_Blue)
 
+      li
+          border none
+          &:last-child
+            a
+              margin: 0;
+              padding: .8em 2em
+              border-radius: 6px
+              font-weight: 500
+              background: var(--soft_Red)
+              color: white
+              border: none
+              box-shadow: 0 8px 13px -4px rgba(83,104,223,.3)
+              cursor: pointer
+              margin-left: 2em
+      ul
+        display: flex
+        align-items: center
+      &-open
+        display: none
+      &-social
+        display: none
