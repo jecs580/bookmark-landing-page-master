@@ -8,3 +8,28 @@
         max-width: 100%
     &-buttons
         padding-top: 1em
+    
+    @media screen and (min-width: 1024px)
+        text-align: left
+        margin: auto
+        max-width: 1280px
+        padding: 2.5em 1.6em
+        &-grid
+            display: grid
+            align-items: center
+            grid-template-areas: "content images"
+            grid-template-columns: 479px 1fr
+            
+        &-imageContainer
+            grid-area: images
+            position relative
+            text-align: right 
+            top 30px
+        &-content
+            .u-wrapper
+                padding 0
+            .u-h1
+                font-size: 2.5em
+            margin auto
+            grid-area: content
+            // padding-right: 2em

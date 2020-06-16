@@ -156,6 +156,36 @@
 .hero-buttons {
   padding-top: 1em;
 }
+@media screen and (min-width: 1024px) {
+  .hero {
+    text-align: left;
+    margin: auto;
+    max-width: 1280px;
+    padding: 2.5em 1.6em;
+  }
+  .hero-grid {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "content images";
+    grid-template-columns: 479px 1fr;
+  }
+  .hero-imageContainer {
+    grid-area: images;
+    position: relative;
+    text-align: right;
+    top: 30px;
+  }
+  .hero-content {
+    margin: auto;
+    grid-area: content;
+  }
+  .hero-content .u-wrapper {
+    padding: 0;
+  }
+  .hero-content .u-h1 {
+    font-size: 2.5em;
+  }
+}
 .tabs {
   margin-top: 2.3em;
   border-top: 1px solid var(--grayish_Blue);
@@ -434,4 +464,9 @@ a {
 }
 .u-button.is-full-width {
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .u-p {
+    font-size: 1em;
+  }
 }
