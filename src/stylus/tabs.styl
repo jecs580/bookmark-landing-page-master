@@ -8,14 +8,19 @@
         border-bottom: 1px solid var(--grayish_Blue)
     &-content
         display none
+        flex-direction: column
         img 
             max-width: 100%
         .u-button
             display: none
+        .u-p
+            padding: 0 .5em
     label 
         padding: 1em 0
         display: block
+        user-select: none
         position relative
+        cursor: pointer
         &::after
             display: none
             content: ""
@@ -32,14 +37,37 @@
         & ~ ul [for="bookmarking"]::after
             display: block
         & ~ .tabs-grid #tab-bookmarking
-            display: block
+            display: flex
     input[id="searching"]:checked
         & ~ ul [for="searching"]::after
             display: block
         & ~ .tabs-grid #tab-searching
-            display: block
+            display: flex
     input[id="sharing"]:checked
         & ~ ul [for="sharing"]::after
             display: block
         & ~ .tabs-grid #tab-sharing
-            display: block
+            display: flex
+    @media screen and (min-width :1024px)
+        border-top none
+        text-align: left 
+        ul
+            display: flex 
+            justify-content: center
+            // max-width: 800px
+            // margin: auto
+        label
+            padding 1em 2em
+            &::after
+                width: 100%
+                transform: none
+        img 
+            margin-right: 6.5em
+        &-content
+            max-width: 86%
+            margin: auto
+            flex-direction: row
+            align-items: center
+            .u-button
+                display: inline-block
+                

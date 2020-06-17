@@ -196,6 +196,7 @@
 }
 .tabs-content {
   display: none;
+  flex-direction: column;
 }
 .tabs-content img {
   max-width: 100%;
@@ -203,10 +204,15 @@
 .tabs-content .u-button {
   display: none;
 }
+.tabs-content .u-p {
+  padding: 0 0.5em;
+}
 .tabs label {
   padding: 1em 0;
   display: block;
+  user-select: none;
   position: relative;
+  cursor: pointer;
 }
 .tabs label::after {
   display: none;
@@ -226,26 +232,59 @@
   display: block;
 }
 .tabs input[id="bookmarking"]:checked ~ .tabs-grid #tab-bookmarking {
-  display: block;
+  display: flex;
 }
 .tabs input[id="searching"]:checked ~ ul [for="searching"]::after {
   display: block;
 }
 .tabs input[id="searching"]:checked ~ .tabs-grid #tab-searching {
-  display: block;
+  display: flex;
 }
 .tabs input[id="sharing"]:checked ~ ul [for="sharing"]::after {
   display: block;
 }
 .tabs input[id="sharing"]:checked ~ .tabs-grid #tab-sharing {
-  display: block;
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .tabs {
+    border-top: none;
+    text-align: left;
+  }
+  .tabs ul {
+    display: flex;
+    justify-content: center;
+  }
+  .tabs label {
+    padding: 1em 2em;
+  }
+  .tabs label::after {
+    width: 100%;
+    transform: none;
+  }
+  .tabs img {
+    margin-right: 6.5em;
+  }
+  .tabs-content {
+    max-width: 86%;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tabs-content .u-button {
+    display: inline-block;
+  }
 }
 .feactures {
   text-align: center;
   padding-bottom: 6em;
 }
+.feactures .u-wrapper >.u-p {
+  max-width: 540px;
+  margin: auto;
+}
 .feactures ul {
-  padding-bottom: 2.7em;
+  padding-bottom: 4em;
 }
 .download {
   padding: 0 1em;
