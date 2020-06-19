@@ -346,6 +346,7 @@
 .carrusel {
   padding-bottom: 2.5em;
   text-align: left;
+  margin-top: 3em;
 }
 .carrusel-header {
   padding: 1em 0;
@@ -374,12 +375,24 @@
   transform: rotate(180deg);
   content: url("../images/icon-arrow-close.svg");
 }
+@media screen and (min-width: 1024px) {
+  .carrusel {
+    border-top: 1px solid var(--lightGray);
+  }
+}
 .questions {
-  padding-bottom: 6em;
+  max-width: 590px;
+  padding-bottom: 6.8em;
   text-align: center;
+  margin: auto;
 }
 .questions .u-button {
   padding: 1em 1.5em;
+}
+@media screen and (min-width: 1024px) {
+  .questions {
+    padding-bottom: 7.9em;
+  }
 }
 .join {
   background: var(--soft_Blue);
@@ -537,5 +550,8 @@ a {
 @media screen and (min-width: 1024px) {
   .u-p {
     font-size: 1em;
+  }
+  .u-h2 {
+    font-size: 1.7em;
   }
 }
