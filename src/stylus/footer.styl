@@ -16,9 +16,10 @@
         padding-top: 1.2em
         a
             display: block
-            padding 1em 0   
+            padding 1em 0
     &-social
         margin-top: 1em
+        display: inline-block
         a
             padding: 0
             width: 25px
@@ -30,3 +31,23 @@
             margin-right: 2em
         .twitter
             background: url('../images/icon-twitter.svg') no-repeat center
+    @media screen and (min-width :1024px)
+        padding 1.2em
+        &-content
+            display: flex
+            justify-content: space-between
+            padding-right:  2em
+            align-items: center
+        img
+            margin-right: 2.2em
+        &-menu
+            display flex
+            padding 0
+            a
+                padding 1em 1.4em
+                font-size: .65em
+        &-social
+            margin 0
+        &-primary
+            display: flex
+            align-items: center

@@ -482,6 +482,7 @@
 }
 .footer-social {
   margin-top: 1em;
+  display: inline-block;
 }
 .footer-social a {
   padding: 0;
@@ -495,6 +496,35 @@
 }
 .footer-social .twitter {
   background: url("../images/icon-twitter.svg") no-repeat center;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 1.2em;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2em;
+    align-items: center;
+  }
+  .footer img {
+    margin-right: 2.2em;
+  }
+  .footer-menu {
+    display: flex;
+    padding: 0;
+  }
+  .footer-menu a {
+    padding: 1em 1.4em;
+    font-size: 0.65em;
+  }
+  .footer-social {
+    margin: 0;
+  }
+  .footer-primary {
+    display: flex;
+    align-items: center;
+  }
 }
 :root {
   --soft_Blue: #5368df;
